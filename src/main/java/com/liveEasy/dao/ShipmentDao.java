@@ -48,7 +48,7 @@ public class ShipmentDao {
 	{
 		String query="SELECT * FROM shipments where shipperId=?";
 		
-//		return jdbcTemplate.queryForObject(query, new Object[]{loadid}, new BeanPropertyRowMapper<>(ship.class));
+		return jdbcTemplate.queryForObject(query, new Object[]{loadid}, new BeanPropertyRowMapper<>(ship.class));
 	}
 	
 	public void update_data(ship data)
